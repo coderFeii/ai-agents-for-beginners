@@ -34,3 +34,23 @@
 - **Lesson 08**：Bing Grounding 需要连接ID
 - **Lesson 15**：需要 Playwright 浏览器环境
 - **无Azure时**：可用 MiniMax 作为 OpenAI 兼容替代
+
+## 同步上游更新
+
+当微软更新了课程内容，执行以下命令获取更新：
+
+```bash
+# 1. 从微软原仓库下载更新（只下载到远程引用，不改变工作目录）
+git fetch upstream
+
+# 2. 合并到本地 main 分支
+git merge upstream/main
+
+# 3. 推到自己的 GitHub fork
+git push origin main
+```
+
+| remote | 指向 |
+|---|---|
+| `origin` | 自己的 fork |
+| `upstream` | 微软原仓库（microsoft/ai-agents-for-beginners） |
